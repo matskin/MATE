@@ -12,7 +12,7 @@ const multiplication = a * b;
 // console.log(a);
 // console.log(b);
 
-document.write('<h3>Task 1 | Numbers operators</h3>' + '<br>');
+document.write('<h3>Task 1 | Numbers operators</h3>');
 document.write('a = ' + a + '<br>');
 document.write('b = ' + b + '<br><br>');
 document.write('addition = ' + addition + '<br>');
