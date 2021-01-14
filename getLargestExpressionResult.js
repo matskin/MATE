@@ -10,26 +10,22 @@
 // write code below this line
 
 const getLargestExpressionResult = (a, b) => {
-  const addition = a + b;
-  const subtraction = a - b;
-  const multiplication = a * b;
-  const division = a / b;
+  const add = a + b;
+  const sub = a - b;
+  const mul = a * b;
+  const div = a / b;
 
-   if (addition > (subtraction && multiplication && division)){
-     return addition;
+  if (add >= sub && add >= mul && add >= div){
+    return add;
   }
 
-   if (subtraction > (addition && multiplication && division)){
-     return subtraction;
+  if (sub >= add && sub >= mul && sub >= div){
+     return sub;
   }
 
-  if (multiplication > (addition && subtraction && division)){
-     return multiplication;
+  if (mul >= add && mul >= sub && mul >= div){
+     return mul;
   }
 
-  if (division > (addition && subtraction && multiplication)){
-     return division;
-  }
+  return div;
 };
-
-// Решение проходит не все тесты, т.е. не правильное
